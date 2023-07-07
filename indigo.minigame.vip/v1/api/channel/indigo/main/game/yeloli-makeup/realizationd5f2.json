@@ -1,0 +1,39 @@
+{
+  "adType": {
+    "interstitial": {
+      "enabled": true,
+      "limitTime": 30,
+      "totalTimes": -1,
+      "strategy": {
+        "waterFall": [
+          {
+            "adsName": "playit",
+            "showTimes": -1
+          }
+        ],
+        "keepBottom": [],
+        "substitute": []
+      }
+    },
+    "reward": {
+      "enabled": true,
+      "limitTime": 0,
+      "totalTimes": -1,
+      "strategy": {
+        "waterFall": [
+          {
+            "adsName": "playit",
+            "showTimes": -1
+          }
+        ],
+        "keepBottom": [],
+        "substitute": []
+      }
+    },
+    "banner": {
+      "enabled": false,
+      "adsName": "playitTaboola",
+      "totalTimes": -1
+    }
+  }
+}
