@@ -21065,7 +21065,7 @@
 	}
 	class RoomBath extends RoomBase {
 		constructor() {
-			super(...arguments), this.resourceName = "res/_unity/Conventional/map_01.ls", this.cameraIndex = -1, this.bNight = !1
+			super(...arguments), this.resourceName = "res/unity/Conventional/map_01.ls", this.cameraIndex = -1, this.bNight = !1
 		}
 		onSceneLoaded(t) {
 			this.resetMat(t)
@@ -21818,7 +21818,7 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_enter_play", ""), this.opts = [], this.bNeedItem = !1, this._optValue = [OPT_TYPE.TU_FEI_ZAO, OPT_TYPE.SHUI_XI, OPT_TYPE.CA_GAN, OPT_TYPE.HEI_TOU_TIE, OPT_TYPE.SI_HEI_TOU_TIE, OPT_TYPE.FU_MIAN_MO, OPT_TYPE.SI_MIAN_MO, OPT_TYPE.XIU_MEI_MAO, OPT_TYPE.QU_DOU_YIN, OPT_TYPE.SUCCESS], this.bFinishSkincare = !1, this._bHold = !1
 		}
 		addPreloadRes(t) {
-			t.addPrefab2D("res/prefab/SkincareItem.json"), t.addModel("res/_unity/Conventional/map_01.ls"), t.addModel(db.get_model_db("paopao").resPath), t.addModel(db.get_effect_db("101").res), t.addModel(db.get_effect_db("104").res), t.addModel(db.get_effect_db("105").res)
+			t.addPrefab2D("res/prefab/SkincareItem.json"), t.addModel("res/unity/Conventional/map_01.ls"), t.addModel(db.get_model_db("paopao").resPath), t.addModel(db.get_effect_db("101").res), t.addModel(db.get_effect_db("104").res), t.addModel(db.get_effect_db("105").res)
 		}
 		buildUi() {
 			mgrI18n.trySetI18nImage(this.buttonFree.node, "pnl_main_13.png"), mgrI18n.trySetI18nImage(this.spriteStartSkincare, "pnl_play_08.png"), this.roleLevel = new RoleLevel(this.barLevel, this.labelLevel), this.lockNode.visible = mgrGuide.dispatchGuide(GUD_EVENT.ENTER_SKINCARE), mgrGame.tryOpenPanelRankVideoTips(3), this.room = new RoomBath, this.room.load(this.onSceneLoaded.bind(this)), this.scoreBar = new ScoreBar, this.scoreBar.setParent(this.topLeftNode), this.scoreBar.x = -100, this.scoreBar.hide(), this.skincareBottomNode.visible = !1, this.optItemNode.visible = !1, this.optItemNode.x = 100, this.bottomLeftNode.x = -150, this.topLeftNode.x = -150, this.playButtons = new PlayBottomNode({
@@ -22689,10 +22689,10 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_mohe", ""), this.enterMainWhenClose = !0
 		}
 		addPreloadRes(t) {
-			t.addModel("res/_unity/Conventional/manghe.ls"), t.addPrefab2D("res/ui/PanelMangHe.json"), t.addPrefab2D("res/ui/PanelMangHeOpen.json"), t.addModel(db.get_model_db(db.MODEL_DB_ID.manghe).resPath), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE1).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE2).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_OPEN).path)
+			t.addModel("res/unity/Conventional/manghe.ls"), t.addPrefab2D("res/ui/PanelMangHe.json"), t.addPrefab2D("res/ui/PanelMangHeOpen.json"), t.addModel(db.get_model_db(db.MODEL_DB_ID.manghe).resPath), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE1).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE2).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_OPEN).path)
 		}
 		buildUi() {
-			mgrI18n.trySetI18nImage(this.sprite01, "pnl_manghe_01.png"), 0 == mgrMangHe.count && mgrGuide.dispatchGuide(GUD_EVENT.ENTER_MANGHE) || GameStatistics.statisCommonEvent(3080), mgrGame.tryOpenPanelRankVideoTips(1), GameStatistics.statisOnStageStart(7501), this.updateSuitInfo(), Laya.Scene3D.load("res/_unity/Conventional/manghe.ls", Laya.Handler.create(this, this.onSceneLoaded)), this.RewardText(), this.checkColorEgg(), this.registerMsg({
+			mgrI18n.trySetI18nImage(this.sprite01, "pnl_manghe_01.png"), 0 == mgrMangHe.count && mgrGuide.dispatchGuide(GUD_EVENT.ENTER_MANGHE) || GameStatistics.statisCommonEvent(3080), mgrGame.tryOpenPanelRankVideoTips(1), GameStatistics.statisOnStageStart(7501), this.updateSuitInfo(), Laya.Scene3D.load("res/unity/Conventional/manghe.ls", Laya.Handler.create(this, this.onSceneLoaded)), this.RewardText(), this.checkColorEgg(), this.registerMsg({
 				OPEN_MANG_HE_SUC: this.onMsgOpenMangHeSuc.bind(this),
 				OPEN_MANG_HE_FINISH: this.onMsgOpenMangHeFinish.bind(this),
 				MANG_HE_RESET: this.onMsgMangheReset.bind(this),
@@ -22789,7 +22789,7 @@
 	}
 	class RoomOutside extends RoomBase {
 		constructor() {
-			super(...arguments), this.resourceName = "res/_unity/Conventional/map_02.ls", this.hudieFov = 45
+			super(...arguments), this.resourceName = "res/unity/Conventional/map_02.ls", this.hudieFov = 45
 		}
 		onSceneLoaded(t) {
 			this.lingGanCamera.getComponent(Laya.Animator).speed = 0, this.resetMat(t);
@@ -23161,7 +23161,7 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_enter_play", ""), this._dialogIdx = 0
 		}
 		addPreloadRes(t) {
-			t.addModel("res/_unity/Conventional/map_02.ls"), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.ZHUAN_SHEN).path)
+			t.addModel("res/unity/Conventional/map_02.ls"), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.ZHUAN_SHEN).path)
 		}
 		buildUi() {
 			mgrI18n.trySetI18nImage(this.buttonFree.node, "pnl_main_13.png"), mgrI18n.trySetI18nImage(this.spriteStartLingGan, "pnl_play_06.png"), mgrI18n.trySetI18nImage(this.spriteStartLaJi, "pnl_play_05.png"), mgrGuide.dispatchGuide(GUD_EVENT.ENTER_PLAY), this.currencyBar = new CurrencyBar, this.currencyBar.setParent(this.topNode), this.room = new RoomOutside, this.room.load(this.onSceneLoaded.bind(this)), this.otherDialog.visible = !1, this.buttonMyDialog.node.visible = !1, this.buttonMyDialog.transition = UIButton.TRANSITION_NONE, this.scoreBar = new ScoreBar, this.scoreBar.setParent(this.topLeftNode), this.scoreBar.x = -100, this.scoreBar.hide(), this.bottomLeftNode.x = -200, this.bottomRightNode.x = 200, this.buttonClose.node.x = -120, this.buttonFree.node.x = -120, this.buttonColorEggMianJu.node.visible = !1, this.onMsgCopChange(), this.playButtons = new PlayBottomNode({
@@ -31762,7 +31762,7 @@
 		initBaseRes(t) {
 			GameStatistics.statisCommonEvent(1001);
 			let e = new ResLoader("BaseRes");
-			e.add("res/singleColor.png", Laya.Loader.IMAGE), e.add("res/cfg/allCfgDb.txt", RES_TYPE.BUFFER), e.add("res/cfg/3dConfig.txt", RES_TYPE.TEXT), e.add("res/cfg/paintData.txt", RES_TYPE.BUFFER), e.add("res/cfg/shaderCompile.txt", RES_TYPE.TEXT), e.add("res/texture/sf_noise_clouds_01.png", RES_TYPE.TEXTURE2D), e.add("res/_unity/Conventional/map_01.ls", RES_TYPE.PREFAB3D), Laya.loader.load("res/i18n/en_random_name_part1_db.json", Laya.Handler.create(this, () => {
+			e.add("res/singleColor.png", Laya.Loader.IMAGE), e.add("res/cfg/allCfgDb.txt", RES_TYPE.BUFFER), e.add("res/cfg/3dConfig.txt", RES_TYPE.TEXT), e.add("res/cfg/paintData.txt", RES_TYPE.BUFFER), e.add("res/cfg/shaderCompile.txt", RES_TYPE.TEXT), e.add("res/texture/sf_noise_clouds_01.png", RES_TYPE.TEXTURE2D), e.add("res/unity/Conventional/map_01.ls", RES_TYPE.PREFAB3D), Laya.loader.load("res/i18n/en_random_name_part1_db.json", Laya.Handler.create(this, () => {
 				mgrI18n.en1 = Laya.loader.getRes("res/i18n/en_random_name_part1_db.json")
 			})), Laya.loader.load("res/i18n/en_random_name_part2_db.json", Laya.Handler.create(this, () => {
 				mgrI18n.en2 = Laya.loader.getRes("res/i18n/en_random_name_part2_db.json")
@@ -36766,7 +36766,7 @@
 	}
 	class RoomInside extends RoomBase {
 		constructor() {
-			super(...arguments), this.resourceName = "res/_unity/Conventional/map_03.ls"
+			super(...arguments), this.resourceName = "res/unity/Conventional/map_03.ls"
 		}
 		onSceneLoaded(t) {
 			this.resetMat(t)
@@ -36998,7 +36998,7 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_enter_play", "")
 		}
 		addPreloadRes(t) {
-			t.addModel("res/_unity/Conventional/map_03.ls")
+			t.addModel("res/unity/Conventional/map_03.ls")
 		}
 		buildUi() {
 			mgrI18n.trySetI18nImage(this.buttonFree.node, "pnl_main_13.png"), mgrI18n.trySetI18nImage(this.spritePaiShou, "pnl_play_07.png"), mgrI18n.trySetI18nImage(this.spriteCaiZhuang, "pnl_play_04.png"), mgrGuide.dispatchGuide(GUD_EVENT.ENTER_PLAY), mgrGame.tryOpenPanelRankVideoTips(3), this.currencyBar = new CurrencyBar, this.currencyBar.setParent(this.topNode), this.bottomLeftNode.x = -200, this.bottomRightNode.x = 200, this.buttonClose.node.x = -120, this.buttonFree.node.x = -120, this.scoreBar = new ScoreBar, this.scoreBar.setParent(this.topLeftNode), this.scoreBar.x = -100, this.scoreBar.hide(), this.onMsgCopChange(), this.playButtons = new PlayBottomNode({
@@ -39243,7 +39243,7 @@
 			}, this.stageDataArr = [], this.bShowSuc = !1
 		}
 		addPreloadRes(t) {
-			t.add("res/_unity/Conventional/map_03.ls", RES_TYPE.PREFAB3D);
+			t.add("res/unity/Conventional/map_03.ls", RES_TYPE.PREFAB3D);
 			let e = FileRecord.getData("MANICURE_STAGE_DATA");
 			if (e) {
 				let a = db.get_cp_npc(e.npcId);
@@ -66562,7 +66562,7 @@
 	}
 	class RoomBath extends RoomBase {
 		constructor() {
-			super(...arguments), this.resourceName = "res/_unity/Conventional/map_01.ls", this.cameraIndex = -1, this.bNight = !1
+			super(...arguments), this.resourceName = "res/unity/Conventional/map_01.ls", this.cameraIndex = -1, this.bNight = !1
 		}
 		onSceneLoaded(t) {
 			this.resetMat(t)
@@ -67315,7 +67315,7 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_enter_play", ""), this.opts = [], this.bNeedItem = !1, this._optValue = [OPT_TYPE.TU_FEI_ZAO, OPT_TYPE.SHUI_XI, OPT_TYPE.CA_GAN, OPT_TYPE.HEI_TOU_TIE, OPT_TYPE.SI_HEI_TOU_TIE, OPT_TYPE.FU_MIAN_MO, OPT_TYPE.SI_MIAN_MO, OPT_TYPE.XIU_MEI_MAO, OPT_TYPE.QU_DOU_YIN, OPT_TYPE.SUCCESS], this.bFinishSkincare = !1, this._bHold = !1
 		}
 		addPreloadRes(t) {
-			t.addPrefab2D("res/prefab/SkincareItem.json"), t.addModel("res/_unity/Conventional/map_01.ls"), t.addModel(db.get_model_db("paopao").resPath), t.addModel(db.get_effect_db("101").res), t.addModel(db.get_effect_db("104").res), t.addModel(db.get_effect_db("105").res)
+			t.addPrefab2D("res/prefab/SkincareItem.json"), t.addModel("res/unity/Conventional/map_01.ls"), t.addModel(db.get_model_db("paopao").resPath), t.addModel(db.get_effect_db("101").res), t.addModel(db.get_effect_db("104").res), t.addModel(db.get_effect_db("105").res)
 		}
 		buildUi() {
 			mgrI18n.trySetI18nImage(this.buttonFree.node, "pnl_main_13.png"), mgrI18n.trySetI18nImage(this.spriteStartSkincare, "pnl_play_08.png"), this.roleLevel = new RoleLevel(this.barLevel, this.labelLevel), this.lockNode.visible = mgrGuide.dispatchGuide(GUD_EVENT.ENTER_SKINCARE), mgrGame.tryOpenPanelRankVideoTips(3), this.room = new RoomBath, this.room.load(this.onSceneLoaded.bind(this)), this.scoreBar = new ScoreBar, this.scoreBar.setParent(this.topLeftNode), this.scoreBar.x = -100, this.scoreBar.hide(), this.skincareBottomNode.visible = !1, this.optItemNode.visible = !1, this.optItemNode.x = 100, this.bottomLeftNode.x = -150, this.topLeftNode.x = -150, this.playButtons = new PlayBottomNode({
@@ -68186,10 +68186,10 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_mohe", ""), this.enterMainWhenClose = !0
 		}
 		addPreloadRes(t) {
-			t.addModel("res/_unity/Conventional/manghe.ls"), t.addPrefab2D("res/ui/PanelMangHe.json"), t.addPrefab2D("res/ui/PanelMangHeOpen.json"), t.addModel(db.get_model_db(db.MODEL_DB_ID.manghe).resPath), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE1).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE2).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_OPEN).path)
+			t.addModel("res/unity/Conventional/manghe.ls"), t.addPrefab2D("res/ui/PanelMangHe.json"), t.addPrefab2D("res/ui/PanelMangHeOpen.json"), t.addModel(db.get_model_db(db.MODEL_DB_ID.manghe).resPath), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE1).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_IDLE2).path), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.MH_OPEN).path)
 		}
 		buildUi() {
-			mgrI18n.trySetI18nImage(this.sprite01, "pnl_manghe_01.png"), 0 == mgrMangHe.count && mgrGuide.dispatchGuide(GUD_EVENT.ENTER_MANGHE) || GameStatistics.statisCommonEvent(3080), mgrGame.tryOpenPanelRankVideoTips(1), GameStatistics.statisOnStageStart(7501), this.updateSuitInfo(), Laya.Scene3D.load("res/_unity/Conventional/manghe.ls", Laya.Handler.create(this, this.onSceneLoaded)), this.RewardText(), this.checkColorEgg(), this.registerMsg({
+			mgrI18n.trySetI18nImage(this.sprite01, "pnl_manghe_01.png"), 0 == mgrMangHe.count && mgrGuide.dispatchGuide(GUD_EVENT.ENTER_MANGHE) || GameStatistics.statisCommonEvent(3080), mgrGame.tryOpenPanelRankVideoTips(1), GameStatistics.statisOnStageStart(7501), this.updateSuitInfo(), Laya.Scene3D.load("res/unity/Conventional/manghe.ls", Laya.Handler.create(this, this.onSceneLoaded)), this.RewardText(), this.checkColorEgg(), this.registerMsg({
 				OPEN_MANG_HE_SUC: this.onMsgOpenMangHeSuc.bind(this),
 				OPEN_MANG_HE_FINISH: this.onMsgOpenMangHeFinish.bind(this),
 				MANG_HE_RESET: this.onMsgMangheReset.bind(this),
@@ -68286,7 +68286,7 @@
 	}
 	class RoomOutside extends RoomBase {
 		constructor() {
-			super(...arguments), this.resourceName = "res/_unity/Conventional/map_02.ls", this.hudieFov = 45
+			super(...arguments), this.resourceName = "res/unity/Conventional/map_02.ls", this.hudieFov = 45
 		}
 		onSceneLoaded(t) {
 			this.lingGanCamera.getComponent(Laya.Animator).speed = 0, this.resetMat(t);
@@ -68658,7 +68658,7 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_enter_play", ""), this._dialogIdx = 0
 		}
 		addPreloadRes(t) {
-			t.addModel("res/_unity/Conventional/map_02.ls"), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.ZHUAN_SHEN).path)
+			t.addModel("res/unity/Conventional/map_02.ls"), t.addAnimationClip(db.get_animation_db(MODEL_ANIM.ZHUAN_SHEN).path)
 		}
 		buildUi() {
 			mgrI18n.trySetI18nImage(this.buttonFree.node, "pnl_main_13.png"), mgrI18n.trySetI18nImage(this.spriteStartLingGan, "pnl_play_06.png"), mgrI18n.trySetI18nImage(this.spriteStartLaJi, "pnl_play_05.png"), mgrGuide.dispatchGuide(GUD_EVENT.ENTER_PLAY), this.currencyBar = new CurrencyBar, this.currencyBar.setParent(this.topNode), this.room = new RoomOutside, this.room.load(this.onSceneLoaded.bind(this)), this.otherDialog.visible = !1, this.buttonMyDialog.node.visible = !1, this.buttonMyDialog.transition = UIButton.TRANSITION_NONE, this.scoreBar = new ScoreBar, this.scoreBar.setParent(this.topLeftNode), this.scoreBar.x = -100, this.scoreBar.hide(), this.bottomLeftNode.x = -200, this.bottomRightNode.x = 200, this.buttonClose.node.x = -120, this.buttonFree.node.x = -120, this.buttonColorEggMianJu.node.visible = !1, this.onMsgCopChange(), this.playButtons = new PlayBottomNode({
@@ -77259,7 +77259,7 @@
 		initBaseRes(t) {
 			GameStatistics.statisCommonEvent(1001);
 			let e = new ResLoader("BaseRes");
-			e.add("res/singleColor.png", Laya.Loader.IMAGE), e.add("res/cfg/allCfgDb.txt", RES_TYPE.BUFFER), e.add("res/cfg/3dConfig.txt", RES_TYPE.TEXT), e.add("res/cfg/paintData.txt", RES_TYPE.BUFFER), e.add("res/cfg/shaderCompile.txt", RES_TYPE.TEXT), e.add("res/texture/sf_noise_clouds_01.png", RES_TYPE.TEXTURE2D), e.add("res/_unity/Conventional/map_01.ls", RES_TYPE.PREFAB3D), Laya.loader.load("res/i18n/en_random_name_part1_db.json", Laya.Handler.create(this, () => {
+			e.add("res/singleColor.png", Laya.Loader.IMAGE), e.add("res/cfg/allCfgDb.txt", RES_TYPE.BUFFER), e.add("res/cfg/3dConfig.txt", RES_TYPE.TEXT), e.add("res/cfg/paintData.txt", RES_TYPE.BUFFER), e.add("res/cfg/shaderCompile.txt", RES_TYPE.TEXT), e.add("res/texture/sf_noise_clouds_01.png", RES_TYPE.TEXTURE2D), e.add("res/unity/Conventional/map_01.ls", RES_TYPE.PREFAB3D), Laya.loader.load("res/i18n/en_random_name_part1_db.json", Laya.Handler.create(this, () => {
 				mgrI18n.en1 = Laya.loader.getRes("res/i18n/en_random_name_part1_db.json")
 			})), Laya.loader.load("res/i18n/en_random_name_part2_db.json", Laya.Handler.create(this, () => {
 				mgrI18n.en2 = Laya.loader.getRes("res/i18n/en_random_name_part2_db.json")
@@ -82263,7 +82263,7 @@
 	}
 	class RoomInside extends RoomBase {
 		constructor() {
-			super(...arguments), this.resourceName = "res/_unity/Conventional/map_03.ls"
+			super(...arguments), this.resourceName = "res/unity/Conventional/map_03.ls"
 		}
 		onSceneLoaded(t) {
 			this.resetMat(t)
@@ -82495,7 +82495,7 @@
 			}, this.instOrBanner = new AdvInstOrBanner("enter_enter_play", "")
 		}
 		addPreloadRes(t) {
-			t.addModel("res/_unity/Conventional/map_03.ls")
+			t.addModel("res/unity/Conventional/map_03.ls")
 		}
 		buildUi() {
 			mgrI18n.trySetI18nImage(this.buttonFree.node, "pnl_main_13.png"), mgrI18n.trySetI18nImage(this.spritePaiShou, "pnl_play_07.png"), mgrI18n.trySetI18nImage(this.spriteCaiZhuang, "pnl_play_04.png"), mgrGuide.dispatchGuide(GUD_EVENT.ENTER_PLAY), mgrGame.tryOpenPanelRankVideoTips(3), this.currencyBar = new CurrencyBar, this.currencyBar.setParent(this.topNode), this.bottomLeftNode.x = -200, this.bottomRightNode.x = 200, this.buttonClose.node.x = -120, this.buttonFree.node.x = -120, this.scoreBar = new ScoreBar, this.scoreBar.setParent(this.topLeftNode), this.scoreBar.x = -100, this.scoreBar.hide(), this.onMsgCopChange(), this.playButtons = new PlayBottomNode({
@@ -84740,7 +84740,7 @@
 			}, this.stageDataArr = [], this.bShowSuc = !1
 		}
 		addPreloadRes(t) {
-			t.add("res/_unity/Conventional/map_03.ls", RES_TYPE.PREFAB3D);
+			t.add("res/unity/Conventional/map_03.ls", RES_TYPE.PREFAB3D);
 			let e = FileRecord.getData("MANICURE_STAGE_DATA");
 			if (e) {
 				let a = db.get_cp_npc(e.npcId);
